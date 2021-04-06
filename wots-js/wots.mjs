@@ -90,9 +90,6 @@ function wots_sign(msg, seed, pub_seed, addr_bytes) {
 	var lenghts = []; //its WOTSLEN long (67)
 	var signature = [];
 	lenghts = chain_lenghts(msg);
-	console.log("lenghts");
-	console.log(lenghts.length);
-	console.log(lenghts.toString());
 	/* the wots private key comes from the seed*/
 	var private_key = expand_seed(seed); // this is the private key
 
